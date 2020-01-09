@@ -23,7 +23,7 @@ export default function Navigation() {
                     <Link to={ROUTES.ADMIN}>Admin</Link>
                 </li>
             </ul>
-            
+            {process.env.REACT_APP_API_KEY}
         </div>
     )
 }

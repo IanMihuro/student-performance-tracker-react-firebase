@@ -6,6 +6,7 @@ import { SignUpLink} from '../SignUp'
 import { withFirebase} from '../Firebase'
 import * as ROUTES from '../../constants/routes'
 import Copyright from '../Copyright'
+import {PasswordForgetLink} from '../PasswordForget'
 
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
@@ -64,9 +65,7 @@ const SignInPage = () => {
                 <SignInForm classes={classes} />
                 <Grid container className={classes.gridStyling}>
                     <Grid item xs>
-                        <Link href="#" variant="body2">
-                            Forgot password? {/* TODO: change to component */}
-                        </Link>
+                        <PasswordForgetLink />
                     </Grid>
                     <Grid item >
                         <SignUpLink classes={classes} />

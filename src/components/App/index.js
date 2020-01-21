@@ -21,7 +21,7 @@ const App = () => (
             <div>
             <Navigation />
 
-            <hr />
+            {/* <hr /> */}
             <Route exact path={ROUTES.LANDING} component={Landing} />
             <Route  path={ROUTES.SIGN_UP} component={SignUp} />
             <Route  path={ROUTES.SIGN_IN} component={SignIn} />
